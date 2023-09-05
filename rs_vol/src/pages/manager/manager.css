@@ -1,0 +1,241 @@
+#header {
+   
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  #nav {
+    background-color: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #bdbdbd;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    float: left;
+   
+  }
+  #detailVolunteer{
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 10px;
+    width:400px;
+  }
+  #buttonOkay{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    
+  }
+  #upButton{
+    display: inline;
+   
+  }
+  hr{
+    margin-top: 80px;
+    width: 900px;
+  }
+  .rectangle {
+    position: relative;
+    width: 830px;
+    height: 50px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 500px;
+    z-index: 1;
+    
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%) rotate(-180deg);  
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid gray;
+    cursor: pointer;
+  }
+  
+  .expanded {
+   
+    position: relative;
+    z-index: 2;
+    
+  }
+  #textArea{
+    height: 300px;
+    border-radius: 4px;
+    width: calc(100% + 60px); /* Updated width value */
+    margin-left: -13px; /* Updated margin value */
+    margin-right: -30px;
+    
+  }
+  .content {  
+    position: relative;
+    z-index: 2;
+    margin-top: 0px; 
+  }
+  
+  .input {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+  }
+  
+  #AllArrow{
+    margin-bottom: 30px;
+  }
+  
+  
+  #form1{
+    margin-top: 200px;
+    position: relative;
+  }
+  #form{
+    margin-top: 20px;
+  }
+  #contentForm{
+    margin-right: 20px;
+    text-align: right;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  #requestButton{
+    display: inline;
+    /* margin-left: 30px; */
+    
+  }
+  #btnDown{
+     
+    margin-top: 120px;
+    margin-left: 110px;
+    
+
+  }
+
+  .inputAndOptionInNewReq{
+
+   width: 300px;
+   margin-left: 400px;
+
+  }
+  
+  .menu legend{
+    text-align: right;
+  }
+  fieldset{
+    width:500px;
+    margin-left: 200px;
+  }
+  fieldset label{
+    text-align: right;
+  }
+  select{
+    width:20px;
+  }
+  #reportInput{
+    display: inline;
+    text-align: right;
+   
+  }
+  .inputAndOptionInReport{
+    width: 300px;
+    margin-left: 500px;
+    margin-top: 20px;
+  }
+  table {
+    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   
+  }
+  
+  td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+    background-color: rgb(132, 132, 196);
+  }
+  #tableForm1{
+    margin-top: 70px;
+  }
+
+
+
+  .empty-space {
+    height: 0; /* Initial height is 0 */
+    transition: height 0.3s ease; /* Add transition effect */
+  }
+  
+  .rectangle.expanded .empty-space {
+    height: 200px; /* Adjust the height based on your content */
+  }
+  
+  .push-down {
+    /* Styles for the elements below the form */
+    transition: margin-top 0.3s ease;
+    margin-top: 0;
+  }
+  
+  .push-down.open {
+    margin-top: 220px; /* Adjust the margin top to create enough space for the expanded form and empty space */
+  } 
+  
+  
+
+
+  
+  .expandable-cell {
+    position: relative;
+  }
+  
+  .expand-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .expand-icon span {
+    color: black; /* Customize the icon color */
+    font-size: 16px; /* Customize the icon size */
+   
+  }
+  
+  .icon-text {
+    color: black; /* Customize the text color */
+    
+  }
+  
+  
+  .expanded-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px; /* Customize the width of the expanded content */
+    background-color: #f0f0f0; /* Customize the background color of the expanded content */
+    padding: 10px;
+  }
+  /* #sendReqToVol{
+    width:"10px";
+     height : "10px";
+  }
+   */

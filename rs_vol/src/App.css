@@ -1,0 +1,95 @@
+/* .App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* border-radius: 5px; */
+    /* width: 300px; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+
+/* div {
+  font-family: 'Viner Hand ITC', cursive;
+} */
+/* assistant-regular - hebrew_latin */
+/* @font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Assistant'), local('Assistant-Regular'),
+  /* url('../fonts/assistant-v18-hebrew_latin-regular.svg') format('svg'), Chrome 26+, Opera 23+, Firefox 39+ */
+/* }  */
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+#logout{
+  display: block;
+  float: left;
+  /* height: 150px; */
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin-left: 10px; /* ערך של מרווח מימין לפי הצורך */
+  /* width: 50px; */
+  border-radius: 25px;
+  /* padding: 0px;
+  margin: 0px; */
+  
+}
+
+button{
+  background-color: turquoise;
+  /* color: #009EF7; */
+  /* --fc-event-bg-color: #009EF7; */
+  --fc-event-text-color: #FFFFFF;
+}
+
+
+h3{
+  color: 0a423d;
+}
+
+
+img{
+  display: block;
+  float: right;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px; /* ערך של מרווח מימין לפי הצורך */
+}

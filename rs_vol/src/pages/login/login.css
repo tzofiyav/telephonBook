@@ -1,0 +1,108 @@
+  body {
+    background-color: #f2f2f2;
+    /* background-image: url("background.jpg") */
+  }
+
+
+  /* עיצוב הכותרת */
+  h1 {
+    padding-left: 4.5%;
+    padding-top: 5%;
+    /* text-align: center; */
+    margin-top: 0px;
+    color: #333;
+  }
+
+
+  h2 {
+    padding-left: 6.5%;
+    /* text-align: center; */
+    margin-top: 0px;
+    color: #333;
+  }
+
+
+  h3{
+    /* text-align: center; */
+    color: #333;
+    text-align: center;
+  }
+
+
+  /* עיצוב טופס הכניסה */
+  form {
+    padding-left: 20%;
+    text-align: right;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 10.5%;
+    /* margin: 0 auto; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+  /* עיצוב כללי לקלטים */
+ /* input {
+    text-align: right;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    
+  }*/
+
+
+  /* עיצוב לכפתור הכניסה */
+  button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    /* background-color: #4CAF50; */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+  img{
+    display: block;
+    float: right;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px; /* ערך של מרווח מימין לפי הצורך */
+  }
+
+  
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-top: center; */
+  /* margin-left: 550px; */
+  /* align-content: center; */
+  /* border-radius: 5px; */
+  /* width: 300px; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */    
+  /* .password{
+    margin-right: 100px;
+    /* width:; */
+  /* } */
+  /* #inputLogin{
+
+  } */
+  /* .slogen{
+    font-family: 'Brush Script MT';
+  } */
+  /* div{
+    font-family: 'Source Sans Pro', sans-serif;
+  } */
+  
