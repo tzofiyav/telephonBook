@@ -47,31 +47,54 @@ function menepulativeB(text) {
     }
 }
 
-// Function to upload JSON data to Firebase
+// Function to upload legacy JSON (old) data to Firebase
+// 
 async function uploadJSONData() {
     // Read the JSON file
     try {
         const jsonData = require('./det.json');
 
         const batch = writeBatch(db);
-        const users = collection(db, 'temp');
-        //let goodItem;
-        let nameDoc;
-        let nameChoose;
+        const users = collection(db, 'temp2');
+
+        let docID;
         jsonData.forEach((item) => {
-            nameChoose = item.Email || item.rowID;
-            nameDoc = nameChoose.toString();
-            console.log(nameDoc);
-            const newDocRef = doc(users, nameDoc);
-            let goodNameItem = menepulative(item.Name);
-            item.first_name = goodNameItem[0];
-            item.last_name = goodNameItem[1];
-            item.category= menepulativeB(item.Tags);
-            delete item.Name;
-            delete item.Tags;
-            batch.set(newDocRef, item);
+            newItem = {} ;
+
+            // Choose a unique ID for each record - app uses email or rowID is no email given
+            uidChoose = item.Email || item.rowID; // Must be unique
+            docID = uidChoose.toString();
+            console.log(docID);
+            const newDocRef = doc(users, docID);
+
+            // split the name string
+            let splitName = menepulative(item.Name);
+            newItem.first_name = splitName[1];
+            newItem.last_name = splitName[0];
+
+            // split the category tag string into an array
+            newItem.category= menepulativeB(item.Tags);
+
+            // Required fields - Make labels consistent with RS app
+            newItem.id = item.ID || item.rowID ; // if not ID found use unique legacy rowID                 
+            newItem.email = item.Email || "" ;
+            newItem.phone = item.Phone || "" ;  
+            newItem.role = "volunteer" ;
+
+            // Optional fields - preserve values - just in case ;-)
+            item["Address"] && (newItem.address = item["Address"]) ;
+            item["Status"]  && (newItem.status = item["Status"])  ;
+            item["Birthday"] && (newItem.birthday = item["Birthday"] );
+            item["Gender"] && (newItem.gender = item["Gender"]) ;
+            item["Group Name"] && (newItem.group = item["Group Name"]) ;
+          
+            // Add the new item to the batch
+            //console.info(newItem) ;
+            batch.set(newDocRef, newItem);
         });
+        // Commit the batch
         await batch.commit();
+        console.log ("Batch load completed for ", jsonData.length, " records");
     }
 
     catch (error) {
